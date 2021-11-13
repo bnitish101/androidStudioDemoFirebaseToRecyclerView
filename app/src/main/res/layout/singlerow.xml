@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImg1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="false"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#BFBBBB"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consumer Name"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textStyle=""
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvAltMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alt Mobile"
+            android:textStyle=""
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_below="@+id/tvMobile"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvBalanceAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance Amt"
+            android:textStyle=""
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_below="@+id/tvAltMobile"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvDueAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Due Amt"
+            android:textStyle=""
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_below="@+id/tvBalanceAmt"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textStyle=""
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/ivImg1"
+            android:layout_below="@+id/tvDueAmt"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
